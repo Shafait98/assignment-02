@@ -190,3 +190,327 @@ body {
 .challange_wrapper {
     flex: 1 1 50%;
 }
+
+/* Deals part */
+
+.content_text {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.letest_titel {
+    font-size: 2.8rem;
+}
+
+.letest_description {
+    color: rgb(132, 126, 126);
+    font-size: 18px;
+}
+
+.letest_img {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 auto;
+
+}
+
+.img-box {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.text-over,
+.letest_btn {
+    position: absolute;
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+.text-over {
+    top: 20px;
+    left: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.letest_btn {
+    bottom: 20px;
+    left: 20px;
+    padding: 8px 15px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+
+.img-box:hover .text-over,
+.img-box:hover .letest_btn,
+.right_img:hover .text-over,
+.right_img:hover .letest_btn {
+    opacity: 1;
+}
+
+.right_img {
+    position: relative;
+    overflow: hidden;
+}
+
+.right_img .text-over,
+.right_img .letest_btn {
+    position: absolute;
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+.right_img .text-over {
+    top: 20px;
+    left: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.right_img .letest_btn {
+    bottom: 106px;
+    left: 29px;
+    padding: 8px 15px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.right_img:hover .text-over,
+.right_img:hover .letest_btn {
+    opacity: 1;
+}
+
+/* Join section */
+
+.join {
+    text-align: center;
+    background-image: url(./assets/news-letter-bg.png);
+    padding: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.input_fild {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.input_div input {
+    background-color: white;
+    margin-top: 25px;
+    width: 40%;
+}
+
+.join_titel {
+    font-size: 24px;
+    white-space: nowrap;
+}
+
+
+.input_fild input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    min-width: 200px;
+    flex: 1;
+}
+
+/* Footer style */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+
+.f_nav_item a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.f_nav_item a:hover {
+    color: #e91e63;
+}
+
+.fourth_div {
+    display: flex;
+    gap: 20px;
+}
+
+
+.fourth_div img {
+    height: 30px;
+    width: 30px;
+    object-fit: contain;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.fourth_div img:hover {
+    transform: scale(1.1);
+}
+
+       /* Responsive part */
+
+@media screen and (max-width: 767px) {
+
+    /* banner part */
+    .nav_item {
+        display: none;
+    }
+
+    /* banner part */
+
+    .banner {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .banner_discription {
+        width: 100%;
+    }
+
+    .banner_img {
+        width: 100%;
+        display: block;
+    }
+
+    /* Card style */
+    .card {
+        flex: 0 0 calc(50% - 10px);
+    }
+
+    .card .btn{
+        font-size: 0.5rem;
+        font-weight: 700;
+    }
+
+
+    .card_Container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* challange  */
+    .challange_contant {
+        flex-direction: column;
+        gap: 50px;
+        margin: 20px;
+        padding: 0px;
+    }
+
+    .Challange_titel{
+        font-size: 2rem;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .challange_description {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .challange_img,
+    .challange_wrapper {
+        flex: 1 1 100%;
+    }
+
+    .challange_img img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .overly_img {
+        display: none;
+    }
+
+    /* Latest Deals */
+
+    .letest_img {
+        flex-direction: column;
+    }
+
+    .left_img,
+    .right_img,
+    .img-box {
+        width: 100%;
+    }
+
+    .left_img,
+    .right_img {
+        display: block;
+    }
+
+    .left_img .img-box img,
+    .right_img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .right_img .letest_btn {
+        bottom: 12px;
+        left: 29px;
+    }
+
+    .text-over,
+    .letest_btn {
+        opacity: 1 !important;
+    }
+
+    .right_img .text-over,
+    .right_img .letest_btn {
+        opacity: 1 !important;
+    }
+
+    /* JOIN PART */
+    .join {
+        margin-top: 40px;
+        padding: 50px;
+    }
+
+    .join_titel {
+        font-size: 20px;
+        margin-bottom: 15px;
+        margin-top: 20px;
+        color: white;
+    }
+
+    .input_fild {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .input_div input {
+        margin-bottom: 15px;
+    }
+
+    .btn {
+        background-color: #E95A08;
+        padding: 10px 15px;
+        border: none;
+    }
+
+}
