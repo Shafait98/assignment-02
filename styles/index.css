@@ -19,3 +19,24 @@ body {
     display: flex;
     justify-content: space-between;
 }
+
+.nav_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav_item {
+    display: flex;
+    gap: 25px;
+}
+
+.nav_item li {
+    list-style: none;
+}
+
+.nav_item a {
+    text-decoration: none;
+    color: lightslategray;
+}
