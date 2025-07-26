@@ -12,3 +12,10 @@ body {
     padding-right: 16px;
     box-sizing: border-box;
 }
+
+/* Nav styles */
+
+.nav_bar {
+    display: flex;
+    justify-content: space-between;
+}
