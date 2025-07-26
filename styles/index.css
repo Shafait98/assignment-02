@@ -40,3 +40,13 @@ body {
     text-decoration: none;
     color: lightslategray;
 }
+
+.nav_item a:hover {
+
+    color: black;
+}
+
+.cart_btn {
+    background: none;
+    border: none;
+}
