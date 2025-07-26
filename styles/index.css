@@ -50,3 +50,49 @@ body {
     background: none;
     border: none;
 }
+
+
+/* Banner style */
+
+.banner {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.banner_titel {
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.banner_discription {
+    color: darkslategrey;
+    font-size: 1.2rem;
+    width: 60%;
+}
+
+.banner_img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Our plant syles */
+
+.plant {
+    text-align: center;
+    margin-top: 100px;
+
+}
+
+.plant_titel {
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.plant_description {
+    color: darkslategrey;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
